@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PHI</title>
+  <style>
+    /* CSS styles for the website */
+    /* Add your own styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(https://img.freepik.com/free-photo/purple-blue-wallpaper-with-colorful-swirl_1340-27545.jpg?size=626&ext=jpg&ga=GA1.1.1015289604.1687730676&semt=sph);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .home {
+      background-image: url(https://img.freepik.com/free-photo/young-lady-looking-pointing-copy-space_171337-5771.jpg?size=626&ext=jpg&ga=GA1.1.1015289604.1687730676&semt=sph);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      padding: 100px 100px 100px 10px;
+      color: floralwhite;
+      font-size: 30px;
+      border-radius: 40px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    #home {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 100px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav div img {
+      display: inline-block;
+    }
+
+    section {
+      margin: 20px;
+    }
+
+    h2 {
+      color: papayawhip;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #ikeja-hospitals .slider {
+      width: 100%;
+    }
+
+    #ikeja-hospitals .slide img {
+      width: 100%;
+    }
+
+    .first-hospital {
+      width: 300px;
+      border: 15px solid pink;
+      padding: 50px;
+      margin: 20px;
+      border-radius: 70px;
+      background-image: url(https://img.freepik.com/free-photo/navy-blue-smoky-art-abstract-background_53876-102669.jpg?size=626&ext=jpg&ga=GA1.1.1015289604.1687730676&semt=sph);
+      color: white;
+    }
+
+    .second-hospital {
+      width: 300px;
+      border: 15px solid green;
+      padding: 130px 50px;
+      margin: 20px;
+      border-radius: 70px;
+      color: white;
+      background-image: url(https://img.freepik.com/free-photo/navy-blue-smoky-art-abstract-background_53876-102669.jpg?size=626&ext=jpg&ga=GA1.1.1015289604.1687730676&semt=sph);
+    }
+
+    .third-hospital {
+      width: 300px;
+      border: 15px solid greenyellow;
+      padding: 130px 50px;
+      margin: 20px;
+      border-radius: 70px;
+      color: white;
+      background-image: url(https://img.freepik.com/free-photo/navy-blue-smoky-art-abstract-background_53876-102669.jpg?size=626&ext=jpg&ga=GA1.1.1015289604.1687730676&semt=sph);
+    }
+
+    .forth-hospital {
+      width: 300px;
+      border: 15px solid orangered;
+      padding: 130px 50px;
+      margin: 20px;
+      border-radius: 70px;
+      color: white;
+      background-image: url(https://img.freepik.com/free-photo/navy-blue-smoky-art-abstract-background_53876-102669.jpg?size=626&ext=jpg&ga=GA1.1.1015289604.1687730676&semt=sph);
+    }
+
+    .fifth-hospital {
+      width: 300px;
+      border: 15px solid orange;
+      padding: 130px 50px;
+      margin: 20px;
+      border-radius: 70px;
+      color: white;
+      background-image: url(https://img.freepik.com/free-photo/navy-blue-smoky-art-abstract-background_53876-102669.jpg?size=626&ext=jpg&ga=GA1.1.1015289604.1687730676&semt=sph);
+    }
+
+    a {
+      color: whitesmoke;
+    }
+
+    .sixth-hospital {
+      width: 300px;
+      border: 15px solid red;
+      padding: 130px 50px;
+      margin: 20px;
+      border-radius: 70px;
+      color: white;
+      background-image: url(https://img.freepik.com/free-photo/navy-blue-smoky-art-abstract-background_53876-102669.jpg?size=626&ext=jpg&ga=GA1.1.1015289604.1687730676&semt=sph);
+    }
+
+    .seventh-hospital {
+      width: 300px;
+      border: 15px solid red;
+      padding: 130px 50px;
+      margin: 20px;
+      border-radius: 70px;
+      color: white;
+      background-image: url(https://img.freepik.com/free-photo/navy-blue-smoky-art-abstract-background_53876-102669.jpg?size=626&ext=jpg&ga=GA1.1.1015289604.1687730676&semt=sph);
+    }
+
+    .eight-hospital {
+      width: 300px;
+      border: 15px solid deeppink;
+      padding: 130px 50px;
+      margin: 20px;
+      border-radius: 70px;
+      color: white;
+      background-image: url(https://img.freepik.com/free-photo/navy-blue-smoky-art-abstract-background_53876-102669.jpg?size=626&ext=jpg&ga=GA1.1.1015289604.1687730676&semt=sph);
+    }
+
+    .nineth-hospital {
+      width: 300px;
+      border: 15px solid blueviolet;
+      padding: 130px 50px;
+      margin: 20px;
+      border-radius: 70px;
+      color: white;
+      background-image: url(https://img.freepik.com/free-photo/navy-blue-smoky-art-abstract-background_53876-102669.jpg?size=626&ext=jpg&ga=GA1.1.1015289604.1687730676&semt=sph);
+    }
+
+    .tenth-hospital {
+      width: 300px;
+      border: 15px solid violet;
+      padding: 130px 50px;
+      margin: 20px;
+      border-radius: 70px;
+      color: white;
+      background-image: url(https://img.freepik.com/free-photo/navy-blue-smoky-art-abstract-background_53876-102669.jpg?size=626&ext=jpg&ga=GA1.1.1015289604.1687730676&semt=sph);
+    }
+
+    a {
+      color: whitesmoke;
+    }
+
+    #hospitals {
+      float: left;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+    }
+
+    input {
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>PHI</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#ikeja_hospitals">Hospitals</a></li>
+        <li><a href="https://login-page.fasasialiyah.repl.co">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction Page -->
+  <section id="home">
+    <nav class="home">
+      <div>
+        <h2>Welcome to PHI</h2>
+        <p>Here, you get to find the top 10 best pediatric<br> hospital of your choice in Lagos,<br> Nigeria.<br> And be
+          sure to get great experiences with them.</p>
+      </div>
+
+    </nav>
+  </section>
+
+  <!-- Hospitals in Ikeda Page -->
+  <section id="ikeja_hospitals">
+    <div>
+      <h2>Pediatric Hospitals in Ikeja, Lagos</h2>
+      <ul class="slider">
+        <div class="slide">
+          <li class="first-hospital" id="hospitals">
+            <h3>Mother and Child Hospital</h3>
+            <h4>informations</h4>
+            <p>
+              <b>Address:</b> Omole: 2, Omole Layout, Ogunnusi Road, Ojodu, Lagos State, Nigeria.<br>
+              contact@motherandchildhospital.com<br>
+              09060025920, 07036202190<br>
+            </p>
+            <p>
+              <b>Address 2</b> Adeniyi Jones: 39 Adeniyi Jones Avenue, Ikeja, Lagos State, Nigeria.<br>
+              contact@motherandchildhospital.com<br>
+              07068372987, 08092299223<br>
+              <a href="https://motherandchildhospital.com/"> Visit their website</a>
+            </p>
+          </li>
+        </div>
+
+        <div class="slide">
+          <li class="second-hospital" id="hospitals">
+            <h3>Children's Specialist Hospital</h3>
+            <h4>informations</h4>
+            <b>Address:</b> 59a, Abba Johnston Crescent, off Adeniyi Jones, Ikeja<br>
+            <b>Hours:</b> Open 24 hours<br>
+            <b>Phone:</b> 0809 066 3425<br>
+            <a href="https://childrens-specialist-hospital.business.site/">Visit their website</a>
+          </li>
+        </div>
+
+        <div class="slide">
+          <li class="third-hospital" id="hospitals">
+            <h3>The Shepherd Medical Centre</h3>
+            <h4>informations</h4>
+            <b>Address:</b> 2 Salvation Rd, Opebi 101233,
+            Ikeja, Lagos
+            <b>Hours:</b> Open 24 hours
+            <b>Phone:</b> 0803 321 6449<br>
+          </li>
+        </div>
+
+        <div class="slide">
+          <li class="forth-hospital" id="hospitals">
+            <h3>Lifefort Children's Hospital</h3>
+            <h4>information</h4>
+            <b>Address:</b> 70 Agege Motor Road, by Bishop St, Junction 101283, Lagos, Nigeria.<br>
+            <b>Email:</b> info@lifefortchildrenshospital.com<br>
+            <b>Phone:</b> +234 803 717 5616 <br>
+            <a href="https://www.lifefortchildrenshospital.com/index.html#contact">Visit their website</a>
+          </li>
+        </div>
+
+        <div class="slide">
+          <li class="fifth-hospital" id="hospitals">
+            <h3>X-serve Children's Hospital</h3>
+            <h4>information</h4>
+            <b>Address:</b> G83X+2MF, 3 Godwin Okigbo street, facing, Alh. Masha Rd, Ikate 101283, Lagos.<br>
+            <b>Email:</b> info@xservehospitals.com<br>
+            <b>Phone:</b> +234 (0) 903 000 1815, +234 (0) 903 0001 816 <br>
+            <a href="http://www.xservehospitals.com/index.php">Visit
+              their website</a>
+          </li>
+        </div>
+
+        <div class="slide">
+          <li class="sixth-hospital" id="hospitals">
+            <h3>Ayinke House</h3>
+            <h4>information</h4>
+            <b>Address:</b> 1 - 5, Oba Akinjobi Road, Ikeja, Lagos,
+            Nigeria.<br>
+            <b>Phone:</b> Emergency Services dial *767* or *121* Toll- Free. Feel free to call our 24hrs Emergency
+            Numbers: +234-909-148-1560, 805-769-9802 <br>
+            <a href="https://www.lasuth.org.ng/contact.html">Visit their website</a>
+          </li>
+        </div>
+
+        <div class="slide">
+          <li class="seventh-hospital" id="hospitals">
+            <h3>Outreach Women & Children's Hospital</h3>
+            <h4>informations</h4>
+            <b>Address:</b> Cele Bus Stop, Isolo 125 Okota Road Opp Slot, Oshodi-Isolo, Lagos.<br>
+            <b>Phone:</b> 01 453 2865 <br>
+          </li>
+        </div>
+
+        <div class="slide">
+          <li class="eight-hospital" id="hospitals">
+            <h3>Bloom Boom Paediatric Centre</h3>
+            <h4>informations</h4>
+            <b>Address:</b> 11A Chief Samuel Ajayi St, Magodo Phase 2 100001, Lagos.<br>
+            <b>Phone:</b> 0803 304 1915 <br>
+          </li>
+        </div>
+
+        <div class="slide">
+          <li class="nineth-hospital" id="hospitals">
+            <h3>Lifeline Children Hospital</h3>
+            <h4>informations</h4>
+            <b>Address:</b> 133 Ogunlana Dr, Surulere 101241, Lagos.<br>
+            <b>Phone:</b>0708 640 3512 <br>
+          </li>
+        </div>
+
+        <div class="slide">
+          <li class="tenth-hospital" id="hospitals">
+            <h3>New Ikeja Hospital</h3>
+            <h4>informations</h4>
+            <b>Address:</b> 13 Gbajobi St, Allen 101233, Ikeja, Lagos.<br>
+            <b>Phone:</b> 0818 800 0911 <br>
+          </li>
+        </div>
+    </div>
+    </ul>
+    </div>
+  </section>
+
+  <!-- Map of Hospital Locations -->
+  <!-- Add the map code here -->
+
+  <!-- JavaScript for sharing as PDF -->
+  <script>
+    // JavaScript code for slideshow
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("slide");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change slide every 3 seconds
+    }
+  </script>
+</body>
+
+</html>
